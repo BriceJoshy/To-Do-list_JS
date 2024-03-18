@@ -1,0 +1,58 @@
+body {
+  background-color: white;
+}
+
+.site-title {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.task_name {
+  padding: 15px;
+  width: 230px;
+  border-color: black;
+}
+
+.task-date {
+  padding: 15px;
+  width: 230px;
+  border-color: black;
+}
+
+.Add-task {
+  height: 50px;
+  padding: 15px;
+  width: 150px;
+  border: none;
+  background-color: rgb(70, 170, 43);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.delete-button {
+  height: 50px;
+  padding: 15px;
+  width: 150px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(239, 70, 59);
+}
+
+.add-task-elements-div {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-class {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: bold;
+}
