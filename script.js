@@ -37,14 +37,14 @@ function renderList() {
   let to_do_list = "";
   for (let i = 0; i < to_do_list_final.length; i++) {
     const tasks = to_do_list_final[i];
-    const dates = dates_list[i];
+    // const dates = dates_list[i];
     const html_element = `
         <div class="div-class">
             <p class="task-details">
-                ${tasks}
+                ${tasks.task}
             </p>
             <p class="date-details">
-                ${dates}
+                ${tasks.date}
             </p>
             <button class="delete-button" 
                     onclick="
@@ -65,8 +65,11 @@ function add_task_final() {
   const date = dates.value;
   const task = tasks.value;
   console.log(task);
-  to_do_list_final.push(task);
-  dates_list.push(date);
+  to_do_list_final.push({
+    task,
+    date,
+  });
+  //   dates_list.push(date);
   console.log(to_do_list_final);
 
   tasks.value = "";
