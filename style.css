@@ -43,8 +43,15 @@ body {
 
 .div-class,
 .add-task-elements-div {
-  padding: 15px;
   display: grid;
   grid-template-columns: 300px 220px 100px;
+  column-gap: 20px;
+  row-gap: 20px;
   font-size: 25px;
+  align-items: center;
+}
+
+.add-task-elements-div {
+  margin-bottom: 25px;
+  align-items: stretch;
 }
