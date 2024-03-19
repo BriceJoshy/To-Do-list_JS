@@ -59,6 +59,7 @@ function renderList() {
   console.log(to_do_list);
   document.querySelector(".todoliststuff").innerHTML = to_do_list;
 }
+
 function add_task_final() {
   const tasks = document.querySelector(".task_name");
   const dates = document.querySelector(".task-date");
