@@ -36,7 +36,7 @@ renderList();
 function renderList() {
   let to_do_list = "";
 
-  to_do_list_final.forEach(function (tasks, index) {
+  to_do_list_final.forEach((tasks, index) => {
     const html_element = `
         <div class="div-class">
             <p class="task-details">
