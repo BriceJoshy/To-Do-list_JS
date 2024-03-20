@@ -35,9 +35,8 @@ renderList();
 
 function renderList() {
   let to_do_list = "";
-  for (let i = 0; i < to_do_list_final.length; i++) {
-    const tasks = to_do_list_final[i];
-    // const dates = dates_list[i];
+
+  to_do_list_final.forEach(function (tasks, index) {
     const html_element = `
         <div class="div-class">
             <p class="task-details">
@@ -48,14 +47,15 @@ function renderList() {
             </p>
             <button class="delete-button" 
                     onclick="
-                        to_do_list_final.splice(${i}, 1); 
+                        to_do_list_final.splice(${index}, 1); 
                         renderList();
                     ">Delete
                 </button>
         </div>`;
 
     to_do_list += html_element;
-  }
+  });
+  for (let i = 0; i < to_do_list_final.length; i++) {}
   console.log(to_do_list);
   document.querySelector(".todoliststuff").innerHTML = to_do_list;
 }
